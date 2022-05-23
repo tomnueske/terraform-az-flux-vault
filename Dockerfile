@@ -1,4 +1,4 @@
-FROM hashicorp/terraform:light
+FROM hashicorp/terraform:1.1.7
 
 ENV VAULT_VERSION 1.3.0
 ENV VAULT_ZIP vault_${VAULT_VERSION}_linux_amd64.zip
