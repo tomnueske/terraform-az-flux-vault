@@ -6,7 +6,7 @@ ENV VAULT_URL https://releases.hashicorp.com/vault/$VAULT_VERSION/$VAULT_ZIP
 
 RUN apk update && apk add bash py-pip curl
 
-RUN apt-get install jq && \
+RUN pip3 install jq && \
     pip3 install yq && \
     chmod +x jq
 
