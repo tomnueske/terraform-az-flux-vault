@@ -7,8 +7,7 @@ ENV VAULT_URL https://releases.hashicorp.com/vault/$VAULT_VERSION/$VAULT_ZIP
 RUN apk update && apk add bash py-pip curl
 
 RUN apk update && apk add jq && \
-    pip3 install yq && \
-    chmod +x jq
+    pip3 install yq
 
 RUN curl -s https://fluxcd.io/install.sh | bash
 
